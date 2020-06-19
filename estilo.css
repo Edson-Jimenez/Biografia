@@ -1,0 +1,30 @@
+body {
+  margin: 2rem auto;
+  overflow-x: hidden;
+  max-width: 800px;
+  background: -webkit-radial-gradient(circle, skyblue, #000 100%);
+}
+
+}
+p {
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: red;
+}
+.Header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Header img {
+  margin: 0 auto;
+  display: block;
+  max-width: 150px;
+  border-radius: 50%;
+}
+.Header nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}

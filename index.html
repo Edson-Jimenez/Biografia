@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<title>Mi Biografía</title>
+  	<meta name="description" content="Esta es una muy muy corta descripcion sobre mi, mi Biografía">
+
+
+  	<meta name="MobileOptimized" content="width">
+  	<meta name="HandheldFriendly" content="true">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  	<link rel="apple-touch-icon" href="./img/ford.png">
+  	<link rel="apple-touch-startup-image" href="./img/ford.png">
+
+  	<link rel="shortcut icon" type="image/png" href="./img/ford.png">
+  	<link rel="manifest" href="./manifest.json">
+  	<link rel="stylesheet" href="./estilo.css">
+  	<script src="script.js"></script>
+	<script src="push.min.js"></script>
+</head>
+<body bgcolor="#4FA4F0">
+	<script>
+		Push.create("Hola, esta es mi Biografía", {
+    body: "Quieres saber mas sobre mi?",
+    icon: '/img/icono_1024.png',
+    timeout: 4000,
+    onClick: function () {
+        window.location="https://www.facebook.com/edsonivan.jimenezdelgado";
+        this.close();
+    }
+});
+	</script>
+	<header class="Header">
+		<h1>Biografía, Hola Mundo!!</h1>
+		<img src="./img/img_1024.png" alt="autor">
+		<p>Mi nombre es Edson Ivan Jimenez Delgado, tengo 22 años, estudio en la universidad.<br>
+		No tengo muchas cualidades, soy una persona antisocial.<br>
+		Me ha nacido el gusto por conocer la republica mexicana y eventualmente el mundo.<br>
+		A futuro espero ser un buen desarrollador, aunque me cueste trabajo entender las cosas.</p>
+		<br>
+		<p>Pasatiempos</p>
+		<nav>
+			<img src="./img/inv_1024.png" alt="inves">
+			<img src="./img/mecanica_1024.png" alt="mecanica">
+			<img src="./img/universe_1024.png" alt="universe">
+		</nav>
+	</header>
+</body>
+</html>
